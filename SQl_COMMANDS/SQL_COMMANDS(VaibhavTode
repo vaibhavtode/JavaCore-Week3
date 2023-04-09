@@ -1,0 +1,76 @@
+--------------------------------------------------------------25 SQL Commands------------------------------------------------------------------------
+
+----------------------------------------------
+Data Manipulation Language (DML) Commands:
+----------------------------------------------
+1. SELECT - Retrieves data from one or more database tables.
+
+2. INSERT - Inserts new rows of data into a database table.
+
+3. UPDATE - Updates existing rows of data in a database table.
+
+4. DELETE - Deletes rows of data from a database table.
+
+5. MERGE - Combines insert, update, and delete operations in a single statement.
+-----------------------------------------------
+ Data Definition Language (DDL) Commands:
+ ----------------------------------------------
+1. CREATE - Creates a new database table, view, or other database object.
+2. ALTER - Modifies the structure of a database table, view, or other database object.
+3. DROP - Deletes a database table, view, or other database object.
+4. TRUNCATE - Deletes all data from a database table without deleting the table itself.
+5. RENAME - Renames a database table, view, or other database object.
+                     Data Control Language (DCL) Commands:
+1. GRANT - Grants permissions to a database user or role.
+2. REVOKE - Revokes permissions from a database user or role.
+Transaction Control Commands:
+1. COMMIT - Saves changes made during a transaction to the database.
+2. ROLLBACK - Reverts changes made during a transaction to the database.
+3. SAVEPOINT - Sets a savepoint within a transaction, which can be used to roll back only
+                            part of the transaction.
+-----------------------------------------------------------------
+Data Query Language (DQL) Commands:
+----------------------------------------------------------------
+1. SELECT - Retrieves data from one or more database tables.
+2. FROM - Specifies the tables from which to retrieve data.
+3. WHERE - Filters data based on a specified condition.
+4. GROUP BY - Groups data based on specified columns.
+5. HAVING - Filters grouped data based on a specified condition.
+6. ORDER BY - Sorts retrieved data based on specified columns.
+7. LIMIT - Limits the number of rows returned by a SELECT statement.
+8. OFFSET - Specifies the number of rows to skip before starting to return data.
+9. JOIN - Combines data from multiple tables based on a specified condition.
+10. UNION - Combines the results of two or more SELECT statements into a single result
+                      set.
+----------------------------------AGGRAGATE FUNCTIONS-----------------------------------
+
+1. SELECT COUNT(*) FROM table_name; -- counts the number of rows in a table
+2. SELECT SUM(column_name) FROM table_name; -- calculates the sum of a column in
+a table
+3. SELECT AVG(column_name) FROM table_name; -- calculates the average of a
+column in a table
+4. SELECT MIN(column_name) FROM table_name; -- returns the minimum value of a
+column in a table
+5. SELECT MAX(column_name) FROM table_name; -- returns the maximum value of a
+column in a table
+6. SELECT COUNT(*) FROM table_name WHERE condition; -- counts the number of
+rows that meet a certain condition
+7. SELECT COUNT(DISTINCT column_name) FROM table_name; -- counts the number
+of unique values in a column
+8. SELECT AVG(column_name) FROM table_name WHERE condition; -- calculates the
+average of a column that meets a certain condition
+9. SELECT SUM(column_name) FROM table_name WHERE condition; -- calculates the
+sum of a column that meets a certain condition
+10. SELECT MIN(column_name) FROM table_name WHERE condition; -- returns the
+minimum value of a column that meets a certain condition
+11. SELECT MAX(column_name) FROM table_name WHERE condition; -- returns the
+maximum value of a column that meets a certain condition
+12. SELECT column1, AVG(column2) FROM table_name GROUP BY column1; --
+calculates the average of column2 for each distinct value in column1
+13. SELECT column1, SUM(column2) FROM table_name GROUP BY column1; --
+calculates the sum of column2 for each distinct value in column1
+14. SELECT column1, COUNT(*) FROM table_name GROUP BY column1; -- counts the
+number of rows for each distinct value in column1
+15. SELECT column1, COUNT(DISTINCT column2) FROM table_name GROUP BY
+column1; -- counts the number of unique values in column2 for each distinct value in
+column1
